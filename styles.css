@@ -11,9 +11,10 @@ html{
     font-size: 16px;
 }
 
-#header{
+#navbar{
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -35,11 +36,11 @@ html{
     font-size: 1rem;
 } */
 
-#navbar{
+#navbar-content{
     /* border: 2px solid black; */
-    display: flex;
+    /* display: flex; */
     /* flex-direction: row; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* width: 15vw; */
     /* flex-grow: 3; */
     margin-left: auto;
@@ -111,7 +112,7 @@ html{
     margin-top: 1.5rem;
 }
 
-#projects-section {
+#projects {
     display: flex;
     flex-direction: column;
     padding: 30px 20px;
@@ -142,19 +143,34 @@ html{
 
 
 
-#projects-section a{
+#project a{
     margin-top: 1.5rem;
 }
 
 .project-tile-img{
     width: 100%;
-    height: calc(100% - 4rem);
+    /* height: calc(100% - rem); */
     /* object-fit: cover; */
     /* border: 2px solid red; */
 }
 
 .project-tile-label{
     padding: .5rem;
+    /* padding: 10px; */
+}
+
+/* .project-tile-label a{
+    margin-top: 1.5rem;
+    padding: 20px;
+
+} */
+
+/* .project-links{
+    margin-top: 2rem;
+} */
+
+#profile-link{
+    margin-top: 1.5rem;
 }
 
 #contact-section{
@@ -175,4 +191,23 @@ html{
     gap: 2rem;
     list-style: none;
     margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 850px){
+
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+    }
+
+    #navbar-content{
+        margin-left: 0;
+        margin-top: 1.5rem
+    }
+    
+    #project-board {
+        flex-direction: column;
+    }
+
 }
